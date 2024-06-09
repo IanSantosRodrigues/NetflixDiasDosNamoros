@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="principal.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="stylesheet" href="css/mediaQuerPrincipal.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <title>Netflix</title>
+</head>
+<body>
+    <header>
+        <a href="https://github.com/IanSantosRodrigues" target="_blank">
+            <img src="Img/netflix.png" alt="Logo" id="logo">
+        </a>
+        <nav>
+            <a href="https://github.com/IanSantosRodrigues" target="_blank">
+                <h5 id="navegar">Meu perfil</h5>
+            </a>
+            <a href="https://github.com/IanSantosRodrigues" target="_blank">
+                <span id="lupa" class="material-symbols-outlined">search</span>
+            </a>
+            <a href="https://github.com/IanSantosRodrigues" target="_blank">
+                <span id="sino" class="material-symbols-outlined">notifications</span>
+            </a>
+            <a href="https://github.com/IanSantosRodrigues" target="_blank">
+                <div id="icon"></div>
+            </a>
+        </nav>
+    </header>
+    <div id="imagem">
+        <article>
+            <strong>
+                <p id="titulo">Definição <br> da <br> perfeição</p>
+            </strong>
+            <strong>
+                <p id="subtitulo">Um filme para a pessoa mais linda e especial do mundo</p>
+            </strong>
+            <a href="assistir.html" target="_self">
+                <div id="play">
+                    <strong>Assistir</strong>
+                </div>
+            </a>
+            <strong>
+                <p id="alta">Em alta</p>
+            </strong>
+        </article>
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <img src="Img/Minhavida/MinhaVida1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="Img/Minhavida/MinhaVida2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="Img/Minhavida/MinhaVida3.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="Img/Minhavida/MinhaVida4.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="Img/Minhavida/MinhaVida5.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="Img/Minhavida/MinhaVida6.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="Img/Minhavida/MinhaVida7.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="Img/Minhavida/MinhaVida8.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="Img/Minhavida/MinhaVida9.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="Img/Minhavida/MinhaVida10.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="Img/Minhavida/MinhaVida11.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="Img/Minhavida/MinhaVida12.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="Img/Minhavida/MinhaVida13.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="Img/Minhavida/MinhaVida14.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="Img/Minhavida/MinhaVida15.jpg" alt="">
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                },
+            },
+        });
+    </script>
+</body>
+</html>
