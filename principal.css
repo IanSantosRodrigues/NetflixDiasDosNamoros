@@ -141,7 +141,7 @@ article {
 .swiper-button-prev {
     color: white;
     top: 50%;
-    transform: translateY(900%);
+    transform: translateY(200%);
 }
 
 #novamente {
@@ -162,7 +162,7 @@ article {
     }
 
     .swiper-container {
-        width: 100%;
+        width: 150%;
     }
 
     #titulo {
@@ -172,4 +172,13 @@ article {
     #subtitulo {
         font-size: 1em;
     }
+    .swiper-slide img {
+        width: 80%; /* Ajuste conforme necessário */
+        height: auto;
+        border-radius: 5px;
+        transition: transform 0.3s ease;
+        object-fit: cover; /* corta ou estica as imagens para se encaixar no espaço disponível */
+        object-position: bottom; /* posiciona as imagens no fundo do carrossel */
+    }
+   
 }
